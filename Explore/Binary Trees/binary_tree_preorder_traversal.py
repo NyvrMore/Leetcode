@@ -21,13 +21,11 @@ Follow up: Recursive solution is trivial, could you do it iteratively?
 #         self.right = None
 
 class Solution(object):
-	def preorderTraversal_Iterative(self, root):
+    def preorderTraversal_Iterative(self, root):
         """
         :type root: TreeNode
         :rtype: List[int]
         """
-
-        
         stack = [root]
         result = []
 

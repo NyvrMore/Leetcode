@@ -43,3 +43,14 @@ class Solution(object):
             else:
                 return output
         return output
+
+"""
+Explanation
+
+If the input is empty, return "". The longest the prefix will be is the length of the minimum string.
+c represents each character in the first string. For each character in the first string, we loop through the 
+corresponding index of all the rest of the strings. If the rest of the strings have that character, we add it
+to the output string, otherwise we return the output
+
+e.g. In the first look, c is 'f', then we loop throught the rest of the strings if the index at 0 is 'f' 
+"""

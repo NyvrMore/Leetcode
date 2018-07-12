@@ -56,3 +56,13 @@ class Solution(object):
             return True
         else:
             return False
+
+""" 
+Explanation
+
+The most straight forward way is using a stack. First, if the length of the string is odd, then we can't match all pairs. We then put the pairs in a dictionary with the 
+opening character as the key and right as the value. We then loop through the characters and if it's a key (opening character), we append it to the stack. If it's a closing
+character, we check the top of the stack to see if it's the matching character. If it is, we pop the top, otherwise we return false. When we reach the end of the characters, 
+we want to make sure the stack is empty that all pairs have been matched.
+
+"""

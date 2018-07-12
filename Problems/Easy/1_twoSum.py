@@ -25,3 +25,11 @@ class Solution(object):
                 return [d[nums[i]], i]
             else:
                 d[target - nums[i]] = i
+
+"""
+Explanation:
+
+We are looking for two numbers such that they add up to a specific target. Therefore, every number has only 1
+other pair that, when added to it, will equal the targetted value. Knowing this, we can just use a dictionary.
+The key will be the value that matches the pair with the index of the index that matches it.
+"""

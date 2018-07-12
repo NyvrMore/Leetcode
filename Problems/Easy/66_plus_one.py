@@ -24,13 +24,22 @@ class Solution(object):
         :rtype: List[int]
         """
         
-        string = ""
+        s = 0
         for digit in digits:
-            string += str(digit)
-        number = int(string)
-        number += 1
-        string = str(number)
+            s = digit + s * 10
+
+        s += 1
         output = []
-        for char in string:
-            output += [int(char)]
+        while s > 0:
+            output = [s % 10] + output
+            s /= 10
+
         return output
+
+"""
+Explanation
+
+s will be the sum for our output. We build sum by looping thorugh digits. We then increment s by 1 then add its
+digits into a list. Note, we want the result of the mod on the left. Then return output
+"""
+

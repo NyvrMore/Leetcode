@@ -43,4 +43,23 @@ class Solution(object):
             pathA = headB if pathA is None else pathA.next
             pathB = headA if pathB is None else pathB.next
         return pathA
+
+        """
+        if pathA is None:
+            pathA = headB
+        else:
+            pathA = pathA.next 
+        """
         
+"""
+Explanation
+
+If either of the heads are None, we return none.
+
+If they're equal length, their intersection is easy to find. 
+
+If not equal length, we traverse both paths until we hit the end and then start traversing the other respectively. This offsets the difference in length
+and both will hit the intersection at the same time.
+
+
+"""

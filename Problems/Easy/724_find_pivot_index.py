@@ -40,3 +40,7 @@ class Solution(object):
                 return counter
             left += value
         return -1
+
+"""
+We move the index to the rihgt so we subtract from the right to move to index 0. Check for sum, then we increment the left sum and decrement the right sum
+"""

@@ -29,13 +29,10 @@ class Solution(object):
         jewels = {}
         for jewel in J:
             if jewel not in jewels:
-                jewels[jewel] = 0
+                jewels[jewel] = True
                 
+        count = 0
         for stone in S:
             if stone in jewels:
-                jewels[stone] += 1
-                
-        output = 0
-        for values in jewels.values():
-            output += values
-        return output
+                count += 1
+        return count

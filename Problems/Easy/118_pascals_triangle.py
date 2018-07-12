@@ -38,3 +38,11 @@ class Solution(object):
             temp.append(1)
             output.append(temp)
         return output
+
+"""
+Explanation
+
+We handle the base case where n < 3. If n = 0, we return the empty list, if n = 1, we append 1, and for n = 2 we append two 1's.
+For n > 2, the value for index 0 will always be 1. Then the follow index is the sum of the number at the same index in the prev list
+and it's right neighbor. After we're done looping, we append a 1 at the end for each layer.
+"""

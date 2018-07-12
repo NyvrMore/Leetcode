@@ -39,3 +39,9 @@ class Solution(object):
                 right = mid - 1
             else:
                 left = mid + 1
+
+"""
+Explanation
+
+This is clearly a binary search problem since we only consider half the input each time. The lowest a nunber can be is 1 and the highest is n.
+"""

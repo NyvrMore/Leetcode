@@ -24,13 +24,16 @@ class Solution(object):
         :rtype: List[int]
         """
         
-        string = ""
-        for digit in digits:
-            string += str(digit)
-        number = int(string)
-        number += 1
-        string = str(number)
+         s = 0
         output = []
-        for char in string:
-            output += [int(char)]
+        
+        for digit in digits:
+            s = digit + s * 10
+            
+        s += 1
+        
+        while s > 0:
+            output = [s % 10] + output 
+            s /= 10
+        
         return output

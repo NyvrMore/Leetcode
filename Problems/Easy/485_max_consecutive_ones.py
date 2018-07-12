@@ -30,3 +30,12 @@ class Solution(object):
                 count = 0
         myMax = max(myMax, count)
         return myMax
+
+"""
+Explanation
+
+Have a myMAx counter to track the max consective zeros so far and a count for the current max zeros.
+If we see a zero, we increment count. If we see a 1, we take the larger of myMax and count to be the new max and then
+set count back to 0.
+
+"""

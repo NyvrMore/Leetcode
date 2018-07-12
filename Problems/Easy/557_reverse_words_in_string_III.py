@@ -14,8 +14,19 @@ class Solution(object):
         :rtype: str
         """
         
+        output = ""
+        for c in s:
+        	output += c
+        return output
+
         wordlist = s.split()
         for i in range(len(wordlist)):
             wordlist[i] = wordlist[i][::-1]
         
         return ' '.join(wordlist)
+
+"""
+Explanation
+
+We split the words using white space as a delimter, and reverse the words seperately
+"""

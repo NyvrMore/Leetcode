@@ -58,3 +58,13 @@ class Solution(object):
                 pointer += 1
                 length += 1
         return length
+
+"""
+Explanation
+
+Since we are not allowed to allocate space, we will simply use a pointer to indicate the location that we need to swap "non-duplicates" to.
+The base cases are when the input is empty or length 1 (which means no duplicates). Now we can handle all cases where n >= 2. The first element will
+will never be duplicate, so we put our pointer at index 1. We also track the previous number considered so initally it's the number at index 0. We
+then loop through the list and as long as our current number isn't equal to the previous, we swap our current number with the number at the pointer index.
+We then increment pointer and the length.
+"""

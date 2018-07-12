@@ -34,3 +34,9 @@ class Solution(object):
                 else:
                     A[row][bit] = 0
         return A
+
+""""
+Explanation
+
+We reverse each row, then for each bit in the row, we flip it.
+"""

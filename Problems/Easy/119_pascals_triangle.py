@@ -37,3 +37,12 @@ class Solution(object):
             for i in range(k - 1, 0, -1):
                 row[i] = row[i] + row[i - 1]
         return row[:rowIndex + 1]
+
+"""
+Explanation
+
+We create an array with the size of the index we need. We then constantly update the array until it's the value of the kth index and return it
+
+We can also notice that the value to the right increases by 1 as we incrase the index and the differnce between each following number decreases by 1 until the middle 
+then reverses with the gap gettig larger again.
+"""

@@ -48,3 +48,10 @@ class Solution(object):
         if double:
             return myIndex
         return -1
+
+"""
+Explanation
+
+We find the maximum value in the array and the index of that number. We then loop through each element and
+check to see if max is at least twice as big as every other element except for the element itself
+"""

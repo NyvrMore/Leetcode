@@ -26,3 +26,12 @@ class Solution(object):
                 return True
             curr = curr.next
         return False
+
+
+"""
+Explanation
+
+We change the value to some unique value (in this case, None). We then keep looping through until we hit the end of the list
+or the value of a given node is none. The former means no cycle while the latter indicates a cycle.
+
+"""

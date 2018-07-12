@@ -34,3 +34,9 @@ class Solution(object):
             if haystack[i:needleLength + i] == needle:
                 return i
         return -1
+
+"""
+Explanation
+
+We get the length of the needle and haystack. Then we just loop through the haystack and search for the needle if it exists
+"""

@@ -32,3 +32,10 @@ class Solution(object):
         for num in nums:
             if d[num] == 1:
                 return num
+
+"""
+Explanation
+
+We simply use a dictionary keep count of the frequency for each element.
+We then loop through all elements and return the number which has a frequency of 1.
+"""

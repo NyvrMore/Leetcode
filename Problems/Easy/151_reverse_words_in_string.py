@@ -26,3 +26,10 @@ class Solution(object):
         for word in wordlist:
             output += word + " "
         return output[:len(output) - 1]
+
+"""
+Explanation
+
+Split the list on white spaces. Reverse the list. Then loop through the list
+and append it our result to get the output string.
+"""

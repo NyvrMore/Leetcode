@@ -28,6 +28,13 @@ class Solution:
             else:
                 d[num] = 1
         
+        n = len(nums)/2
         for item in d:
-            if d[item] > len(nums)/2:
+            if d[item] > n:
                 return item
+
+""" 
+Explanation
+
+Track the frequenct of each element. Then find the element that appears more than n/2 times
+"""

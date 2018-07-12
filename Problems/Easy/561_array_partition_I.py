@@ -24,3 +24,12 @@ class Solution(object):
         for i in range(len(nums)/2):
             sum += min(nums[2*i], nums[2*i+1])
         return sum
+
+""" 
+Explanation
+
+In order to minimize the damage caused by the smallest elements, we pair them with the next smallest elements
+so the largest are not dragged down. We sort first then pair every two elements. We do n loops and and pair each.
+2 * i gives us every even
+2 * i + 1 gives us every odd
+"""

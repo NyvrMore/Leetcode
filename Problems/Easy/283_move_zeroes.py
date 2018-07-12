@@ -24,3 +24,10 @@ class Solution(object):
             if nums[i] != 0:
                 nums[i], nums[pointer] = nums[pointer], nums[i]
                 pointer += 1
+
+"""
+Explanation
+
+We use a pointer to mark the index where the next element should go. We then loop through the array
+and if we see a non-zero, we swap it with the index and increment the pointer
+"""

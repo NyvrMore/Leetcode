@@ -39,3 +39,14 @@ class Solution(object):
                 high = mid - 1
                 
         return ans
+
+"""
+Explanation
+
+If we're given 0 or 1,the sqrt is the respective value.
+
+Otherwise we use binary search with the lowest being 0 and the maximum being x. 
+
+Note: we let ans be the result of mid * mid < x because once low > high, then it should be the correct
+value since we're truncating off decimals.
+"""

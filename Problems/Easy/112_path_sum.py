@@ -42,3 +42,13 @@ class Solution(object):
         right = self.hasPathSum(root.right, sum - root.val)
 
         return left or right
+
+
+"""
+Explanation
+
+
+Top down:
+
+We keep build up the sum as we go down down the tree. If we hit a leaf node and our sum if found, we bubble up true, OW false.xs
+"""

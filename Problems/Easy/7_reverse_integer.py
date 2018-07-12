@@ -24,19 +24,28 @@ class Solution(object):
         :rtype: int
         """
         
-        isPos = True # flag as negative and make positive
+        
+        neg = False
         if x < 0:
-            x = 0 - x
-            isPos = False
-            
-        reverse = 0     # get the reverse form
-        while x is not 0:
-            reverse = reverse * 10 + x % 10
+            neg = True
+            x = -1 * x
+        
+        s = 0
+        while x > 0:
+            s = x % 10 + s * 10
             x /= 10
             
-        if not isPos: # if it was negative, make it negative again
-            reverse = 0 - reverse
-            
-        if reverse.bit_length() > 31: # check to see if it's 32 bit; 1 bit used to check sign 
+        if neg:
+            s = -1 * s
+        if (-1 * (1 << 31)) < s < ((1 << 31) - 1): # check 32 bit range [-2^31, 2^31 - 1] note, 0 included in positive half
+            return s
+        else:
             return 0
-        return reverse
+
+""" 
+Explanation
+
+We first check if number is negative and track it. Then we reverse the integer and make it negative again if it was previously.
+Lastly, we check the range.
+
+"""

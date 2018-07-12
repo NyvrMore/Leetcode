@@ -35,3 +35,10 @@ class Solution:
             if d[item] > 1:
                 return True
         return False
+
+
+"""
+Explanation
+
+Use a dictionary to keep track of number frequency, if any number has a frequency greater than 1, return True
+"""

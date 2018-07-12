@@ -32,3 +32,10 @@ class Solution(object):
                 l += 1
             else:
                 r -= 1
+
+"""
+Explanation
+
+Use two pointers for the left and right pointer. Check to see if the sum equals the target,
+if not, if it's less, we increment the left which makes it bigger. Vice versa if it's larger.
+"""

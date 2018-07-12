@@ -36,10 +36,15 @@ class Solution(object):
         	val = temp % 10 + val * 10
         	temp /= 10
         
-        while x > 0 and val > 0:
-        	if x % 10 != val % 10:
-        		return False
-        	x /= 10
-        	val /= 10
-        return True
+        if val == x:
+            return True
+        return False
 
+"""
+Explanation
+
+Reverse the nunber and check if it equals the input since the palidrome of a number
+is the same number
+
+
+"""

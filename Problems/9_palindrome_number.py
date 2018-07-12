@@ -28,18 +28,15 @@ class Solution(object):
         :rtype: bool
         """
         if x < 0:
-        	return False
+            return False
 
         val = 0
         temp = x
         while temp > 0:
-        	val = temp % 10 + val * 10
-        	temp /= 10
+            val = temp % 10 + val * 10
+            temp /= 10
         
-        while x > 0 and val > 0:
-        	if x % 10 != val % 10:
-        		return False
-        	x /= 10
-        	val /= 10
-        return True
+        if val == x:
+            return True
+        return False
 

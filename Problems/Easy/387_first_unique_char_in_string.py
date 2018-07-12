@@ -29,3 +29,11 @@ class Solution(object):
             if d[s[i]] == 1:
                 return i
         return -1
+
+
+"""
+Explanation
+
+Count the frequency of each element. Then loop through again and return the character who has a frequency
+of 1
+"""

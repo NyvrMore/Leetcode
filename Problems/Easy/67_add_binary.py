@@ -30,7 +30,6 @@ class Solution(object):
 
         output = ""
         carry = False
-        carry = False
         for i in range(len(a) - 1, -1, -1):
             if a[i] == "0" and b[i] == "0" and not carry:
                 output = "0" + output
@@ -51,3 +50,11 @@ class Solution(object):
             output = "1" + output
 
         return output
+
+"""
+Explanation
+
+We find the difference between the length of a and b and add padding so they're equal length. 
+We then loop starting from right most and moving left and adding the values and keep tracking if there's
+a carry or not.
+"""

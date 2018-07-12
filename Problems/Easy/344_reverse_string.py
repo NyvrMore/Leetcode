@@ -13,3 +13,9 @@ class Solution(object):
         """
         
         return s[::-1]
+
+"""
+Explanation
+
+We can also just loop through the characters to reverse them
+"""

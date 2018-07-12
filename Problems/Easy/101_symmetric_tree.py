@@ -39,3 +39,15 @@ class Solution(object):
         """
         
         return self.isMirror(root, root)
+
+""" 
+Explanation
+
+We break the function into a helper with more parameters.
+
+If both trees are None, then they're symmetric. 
+If one of the trees are None, then they're not symmetric.
+
+We check to make sure the values for each branch are equal and the left subtree of one tree is equal to the right subtree of the other tree
+and vice versa.
+"""
